@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88ffffff"
+    android:orientation="vertical"
+    tools:context="com.gjd.puddingcomic.fargments.LeftFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/fragment_left_back" />
+
+        <ImageView
+            android:id="@+id/logo_fragment_left"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/default_logo" />
+
+        <TextView
+            android:id="@+id/login_fragment_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo_fragment_left"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="20dp"
+            android:text="立即登陆"
+            android:textColor="#66000000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/register_fragment_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/splash_btu_slector"
+            android:padding="5dp"
+            android:text="快速注册"
+            android:textColor="#66000000"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    <!--待写，listView-->
+    <!--<ListView
+        android:id="@+id/lv_fragment_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>-->
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/homePage_fragment_left"
+                style="@style/CustText"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="首页" />
+            <View style="@style/CustView" />
+
+            <TextView
+                android:id="@+id/random_fragment_left"
+                style="@style/CustText"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="随机" />
+
+            <TextView
+                android:id="@+id/update_fragment_left"
+                style="@style/CustText"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="更新中" />
+
+            <!--自定义一条线-->
+            <!--<View
+                style="@style/CustView"/>-->
+            <TextView
+                android:id="@+id/rankLink_fragment_left"
+                style="@style/CustText"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="排行榜" />
+
+            <TextView
+                android:id="@+id/end_fragment_left"
+                style="@style/CustText"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="已完结" />
+
+            <TextView
+                android:id="@+id/classify_fragment_left"
+                style="@style/CustText"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="分类" />
+
+
+            <TextView
+                android:id="@+id/image_fragment_left"
+                style="@style/CustText"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="图区" />
+
+            <View style="@style/CustView" />
+
+            <TextView
+                android:id="@+id/history_fragment_left"
+                style="@style/CustText"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="历史" />
+            <View style="@style/CustView" />
+
+
+            <TextView
+                android:id="@+id/setting_fragment_left"
+                style="@style/CustText"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:text="设置" />
+            <View style="@style/CustView" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

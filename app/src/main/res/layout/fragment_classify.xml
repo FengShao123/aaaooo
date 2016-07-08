@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gjd.puddingcomic.fargments.ClassifyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <it.neokree.materialtabs.MaterialTabHost
+        android:id="@+id/tab_classify_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:accentColor="@color/colorAccent"
+        app:primaryColor="@color/colorPrimary"
+        app:textColor="#FFFFFF" />
+    <!-- 添加下拉刷新的框架-->
+    <!-- 一定要设置列数numColumns-->
+    <!-- 头部带有默认的视图,经典版本视图的PtrClassicFrameLayout(头部有小箭头旋转,进度条滚动的效果)-->
+
+    <!--<GridLayout
+        android:id="@+id/grid_classify_fragment"
+        android:columnCount="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_grid_classify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </ListView>
+    </GridLayout>-->
+    <!--<ListView
+        android:id="@+id/lv_classify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_classify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
